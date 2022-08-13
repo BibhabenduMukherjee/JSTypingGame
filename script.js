@@ -26,6 +26,7 @@ quoteInputElement.addEventListener('input', () => {
 
   if (correct) renderNewQuote()
 })
+const RANDOM_QUOTE_API_URL = "http://api.quotable.io/random";
 
 function getRandomQuote() {
   return fetch(RANDOM_QUOTE_API_URL)
